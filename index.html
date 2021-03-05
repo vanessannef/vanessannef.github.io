@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Skin Care</title>
+	<script src="https://unpkg.com/enter-view"></script>
+</head>
+<style type="text/css">
+body, html {
+	font-family:"Helvetica-Neue", sans-serif;
+	top:0;
+	left:0;
+	margin:0;
+	color:#1d1d1d;
+}
+#featured {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  overflow:none;
+}
+.aligner {
+	max-width:80%;
+}
+#featured .title{
+	text-align:center;
+	margin-top:5%;
+	width:100%;
+}
+.title h2 {
+	font-size:1em;
+	font-weight:400;
+}
+#featured img {
+  width:100%;
+}
+#scroll {
+  font-stretch:expanded;
+  text-align:center;
+  width:80%;
+  position:absolute;
+  bottom:10%;
+  font-size:6em;
+  color:#1d1d1d;
+  cursor:pointer;
+  transition:0.5s all ease-in-out;
+  line-height:0.5em;
+}
+#scroll:hover {
+  transform:scale(1.2);
+  transform-origin:50% 30%;
+}
+.section{
+  opacity:0;
+  width:90%;
+  height:auto;
+  padding:5%;
+  margin-bottom:0%;
+  padding-bottom:0%;
+  line-height:2em;
+  transform:translateY(5em);
+  transition:0.5s ease-in-out;
+  margin:auto;
+}
+.section img {
+	width:100%;
+}
+.entered {
+  transform:translateY(0em);
+  opacity:1;
+}
+.tableauPlaceholder {
+	height:50vh;
+}
+.scrollpost {
+	width:100%;
+	padding:0;
+	margin:0;
+	overflow-x:scroll;
+	overflow-y:hidden;
+	white-space:nowrap;
+}
+.scrollpost img {
+	width:25%;
+	display:inline-block;
+	margin:0% 4% 0% 0%;
+}
+.open {
+	position:relative;
+		text-align:center;
+	margin:auto;
+}
+.open:hover .overlay{
+	opacity:0.8;
+}
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	background-color: black;
+	opacity:0;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	cursor:pointer;
+	transition:0.5s ease-in-out;
+}
+.open img {
+	width:80%;
+}
+
+.overlay h2 {
+	color:white;
+	background-color:none;
+	margin:auto;
+}
+#final {
+	margin-bottom:5%;
+}
+.open a {
+	text-decoration:none;
+	background-color:none;
+	padding:2% 4%;
+	cursor:pointer;
+	border:0.05em solid white;
+	transition:0.5s ease-in-out;
+}
+.open a:hover {
+	background-color:white;
+}
+.open a:hover h2{
+	color:#1d1d1d;
+}
+@media screen and (max-width:767px){
+	#featured img {
+		margin-left:-50%;
+		bottom:0;
+		position:absolute;
+		width:200%;
+		z-index:0;
+	}
+	#featured .title {
+		z-index:1;
+	}
+	.scrollpost img {
+		width:70%;
+	}
+}
+</style>
+<body>
+
+<div id="featured">
+	<div class="aligner">
+		<div class="title">
+		<h1>All about skincare</h1>
+		<h2>Vanessa Nefve</h2>
+		</div>
+	  	<img src="assets/featured/skincare-routine-1586966059.jpg">
+	 	 <div id="scroll">&#xfe40;</div>	
+	</div>
+</div>
+
+<!-- Simple text intro -->
+<div class="section" id="first">
+	<h1>About the project</h1>
+	<p>I wanted to explore the ways that people responded to skincare products. I settled on this because I work for a skincare company and this data is incredibly useful as consumer insights is vital to the company. Finding out the ratings from the users was really interesting because price did not always correlate to best reviews which is something that most people would actually find interesting.</p>
+</div>
+
+<!-- About the data carousel -->
+<div class="section">
+	<h1>About the data</h1>
+	<p>The data set was from Kaggle by Mary Lewis one year ago. The data was collected from reviews of skincare products from all types of companies and products, ranging from face mists, spf's, moisturizers etc. The data included reviews, price, product name, brand name, and number of reviews.</p>
+	<!-- the scrolling post holder -->
+	<div class="scrollpost">
+		<img src="assets/about-the-data/Untitled design (2) copy.png">
+		<img src="assets/about-the-data/new.png">
+		<img src="assets/interactive/download.jpg">
+									<img src="assets/interactive/s-l400.jpg">
+		
+	</div>
+</div>
+
+<div class="section">
+	<h1>Skincare ratings by brands
+	<div class='tableauPlaceholder' id='viz1614903327013' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book3_16149033116000&#47;Sheet7&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Book3_16149033116000&#47;Sheet7' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book3_16149033116000&#47;Sheet7&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1614903327013');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</div>
+<h1>Top Products</h1>
+	<p>The following Products, were selected to have a 4.5 or higher rating out of 5.</p>
+	<!-- the scrolling post holder -->
+<div class='tableauPlaceholder' id='viz1614957830770' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;he&#47;hello12345&#47;Sheet2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='hello12345&#47;Sheet2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;he&#47;hello12345&#47;Sheet2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1614957830770');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+<!-- Tableau Public embed -->
+
+<div class="section">
+	<h1>Category and Overall Ratings </h1>
+<div class='tableauPlaceholder' id='viz1614902289780' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_16149019984230&#47;Story1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Book1_16149019984230&#47;Story1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1_16149019984230&#47;Story1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1614902289780');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1016px';vizElement.style.height='991px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script></div>
+
+<!-- About the data carousel -->
+<div class="section">
+	<h1>Skincare by category and price</h1>
+
+	<!-- the scrolling post holder -->
+	<div class='tableauPlaceholder' id='viz1614902986986' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book2_16149029742990&#47;Sheet6&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Book2_16149029742990&#47;Sheet6' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book2_16149029742990&#47;Sheet6&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1614902986986');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+</div>
+	<h1>Product Reviews</h1>	
+	<div class='tableauPlaceholder' id='viz1614918787433' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1111_16149187723190&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Book1111_16149187723190&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book1111_16149187723190&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1614918787433');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<h1>About the consumers who left the reviews</h1>	
+<div class='tableauPlaceholder' id='viz1614918404625' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book5_16149178481290&#47;Sheet2&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Book5_16149178481290&#47;Sheet2' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book5_16149178481290&#47;Sheet2&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1614918404625');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<h1>How much the consumers paid</h1>
+<div class='tableauPlaceholder' id='viz1614960036656' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Bo0022&#47;Sheet1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Bo0022&#47;Sheet1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Bo0022&#47;Sheet1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1614960036656');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<h1>Amount of product reviews by catagories</h1>
+		<img src="assets/about-the-data/new.png">
+
+
+<div class="section" id=final>
+	<h1>Takeaways</h1>	
+	<h1>More expensive does not necessarily mean better (except when it comes to sheet masks and acne treatments). The highest rated skincare brand was The Body Shop. Consumers tend to write less reviews on brow products and the most on face mists. </h1>
+			<img src="assets/interactive/skincare-1588698347.png">
+						
+			<div class='overlay'>
+				<a href="assets/interactive/index.html" target="_blank">
+					<h2>View</h2>
+				</a>
+			</div>
+		</div>
+</div>
+
+
+</body>
+<script type="text/javascript">
+
+scroll=document.querySelector('#scroll');
+setup = document.querySelector('#first');
+scroll.onclick=function() {
+    first.scrollIntoView({ 
+    behavior: 'smooth',
+    block: "start",
+  });
+};
+
+enterView({
+  selector: '.section',
+  enter: function(el) {
+    el.classList.add('entered');
+  },
+  exit: function(el) {
+    el.classList.remove('entered');
+  },
+  progress: function(el, progress) {
+
+  },
+  offset: 0.2, // enter at middle of viewport
+});
+
+</script>
+</html>
